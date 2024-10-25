@@ -121,38 +121,38 @@
                     </form>
                 </div>
         
-                <!-- Tarefas do Projeto -->
-                <div class="card" id="project-tasks">
-                    <h2>Tarefas do Projeto</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Nome da Tarefa</th>
-                                <th>Status</th>
-                                <th>Ações</th>
-                            </tr>
-                        </thead>
-                        <tbody id="task-list">
-                            <tr>
-                                <td>Tarefa 1</td>
-                                <td>Pendente</td>
-                                <td>
-                                    <button onclick="editTask('Tarefa 1')">Editar</button>
-                                    <button onclick="deleteTask('Tarefa 1')">Excluir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Tarefa 2</td>
-                                <td>Concluída</td>
-                                <td>
-                                    <button onclick="editTask('Tarefa 2')">Editar</button>
-                                    <button onclick="deleteTask('Tarefa 2')">Excluir</button>
-                                </td>
-                            </tr>
-                            <!-- Adicione mais tarefas conforme necessário -->
-                        </tbody>
-                    </table>
-                </div>
+               <!-- Tarefas do Projeto -->
+<div class="card" id="project-tasks">
+    <h2>Tarefas do Projeto</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome da Tarefa</th>
+                <th>Status</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="task-list">
+            <tr>
+                <td class="task-name">Tarefa 1</td>
+                <td class="task-status">Pendente</td>
+                <td>
+                    <button onclick="editTask(this)">Editar</button>
+                    <button onclick="deleteTask(this)">Excluir</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="task-name">Tarefa 2</td>
+                <td class="task-status">Concluída</td>
+                <td>
+                    <button onclick="editTask(this)">Editar</button>
+                    <button onclick="deleteTask(this)">Excluir</button>
+                </td>
+            </tr>
+            <!-- Adicione mais tarefas conforme necessário -->
+        </tbody>
+    </table>
+</div>
         
                 <!-- Cadastrar Nova Tarefa -->
                     <div class="card" id="register-task">
